@@ -119,3 +119,21 @@ html {
 .card:hover {
   transform: translateY(-5px);
 }
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  max-width: 600px;
+}
+
+.hero-image img {
+  width: 280px;
+  max-width: 100%;
+  height: auto;
+}

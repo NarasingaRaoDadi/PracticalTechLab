@@ -1,18 +1,30 @@
+import heroImage from "../assets/hero.png";
+
 export default function Hero() {
   return (
     <section id="home" className="hero">
-      <h1>LexAutomation</h1>
+      <div className="hero-content">
 
-      <h2>Legal Technology Solutions</h2>
+        <div className="hero-text">
+          <h1>LexAutomation</h1>
 
-      <p>
-        Bridging Law and Technology through innovative legal automation,
-        software solutions and digital transformation.
-      </p>
+          <h2>Legal Technology Solutions</h2>
 
-      <button className="btn">
-        Contact Us
-      </button>
+          <p>
+            Bridging Law and Technology through innovative legal automation,
+            software solutions and digital transformation.
+          </p>
+
+          <button className="btn">
+            Contact Us
+          </button>
+        </div>
+
+        <div className="hero-image">
+          <img src={heroImage} alt="LexAutomation" />
+        </div>
+
+      </div>
     </section>
   );
 }
