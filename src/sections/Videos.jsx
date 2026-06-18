@@ -85,7 +85,7 @@ return ( <section id="videos"> <h2>Featured Videos</h2>
       target="_blank"
       rel="noreferrer"
     >
-      View All 140+ Videos on YouTube →
+      View All 150+ Videos on YouTube →
     </a>
   </div>
 </section>
