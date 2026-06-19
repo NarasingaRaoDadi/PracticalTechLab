@@ -40,7 +40,7 @@ section {
 
   position: sticky;
   top: 0;
-  z-index: 1000;
+  z-index: 10000;
   background: #061437;
 }
 
@@ -408,15 +408,8 @@ html {
   }
 
   .navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-  background: #061437;
-}
-body {
-  padding-top: 80px;
+  padding: 15px 20px;
+  position: relative;
 }
 .menu-btn {
   display: block;
@@ -437,7 +430,7 @@ body {
   padding: 20px 0;
   gap: 20px;
   text-align: center;
-  z-index: 9999;
+  z-index: 10001;
 
   box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
