@@ -31,7 +31,7 @@ export const chapters = [
     id:4,
     icon:"🌍",
     title:"Earth & Moon",
-    topics:14,
+    topics:15,
     mcqs:90,
     color:"#10B981"
 },
@@ -58,7 +58,7 @@ export const chapters = [
     id:7,
     icon:"🇮🇳",
     title:"ISRO & India's Space Missions",
-    topics:18,
+    topics:15,
     mcqs:120,
     color:"#F97316"
 },
@@ -67,7 +67,7 @@ export const chapters = [
     id:8,
     icon:"👨‍🚀",
     title:"Space Exploration",
-    topics:16,
+    topics:15,
     mcqs:100,
     color:"#6366F1"
 },
@@ -76,7 +76,7 @@ export const chapters = [
     id:9,
     icon:"⚛️",
     title:"Basic Physics for Space Science",
-    topics:20,
+    topics:15,
     mcqs:150,
     color:"#14B8A6"
 },
@@ -85,7 +85,7 @@ export const chapters = [
     id:10,
     icon:"🧠",
     title:"Scientific Reasoning & Logical Aptitude",
-    topics:25,
+    topics:15,
     mcqs:200,
     color:"#EC4899"
 },
@@ -94,7 +94,7 @@ export const chapters = [
     id:11,
     icon:"🌠",
     title:"General Space Awareness",
-    topics:22,
+    topics:15,
     mcqs:180,
     color:"#84CC16"
 }

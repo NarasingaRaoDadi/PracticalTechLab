@@ -5,6 +5,10 @@ import { chapter04Topics } from "./chapter04";
 import { chapter05Topics } from "./chapter05";
 import { chapter06Topics } from "./chapter06";
 import { chapter07Topics } from "./chapter07";
+import { chapter08Topics } from "./chapter08";
+import { chapter09Topics } from "./chapter09";
+import { chapter10Topics } from "./chapter10";
+import { chapter11Topics } from "./chapter11";
 
 export function getTopics(chapterId){
 
@@ -30,6 +34,18 @@ export function getTopics(chapterId){
 
         case 7:
             return chapter07Topics;
+        
+        case 8:
+            return chapter08Topics;
+        
+        case 9:
+            return chapter09Topics;
+        
+        case 10:
+            return chapter10Topics;
+
+        case 11:
+            return chapter11Topics;
 
         default:
             return [];

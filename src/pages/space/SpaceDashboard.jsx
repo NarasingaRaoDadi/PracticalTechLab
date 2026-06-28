@@ -3,11 +3,12 @@ import { STORAGE_KEY } from "../../utils/access";
 import { chapters } from "../../data/iso2026/chapters";
 import ChapterCard from "../../components/space/ChapterCard";
 import "./SpaceDashboard.css";
+import { getOverallProgress } from "../../utils/progress";
 
 export default function SpaceDashboard() {
 
   const navigate = useNavigate();
-
+  const overallProgress = getOverallProgress(chapters);
   const handleLogout = () => {
 
     localStorage.removeItem(STORAGE_KEY);
@@ -63,7 +64,7 @@ export default function SpaceDashboard() {
 
         <div className="stat-card">
 
-          <h2 style={{ color:"#fff" }}>137</h2>
+          <h2 style={{ color:"#fff" }}>169</h2>
 
           <p>Topics</p>
 
@@ -79,7 +80,7 @@ export default function SpaceDashboard() {
 
         <div className="stat-card">
 
-          <h2 style={{ color:"#fff" }}>0%</h2>
+          <h2 style={{ color:"#fff" }}>{overallProgress}%</h2>
 
           <p>Progress</p>
 

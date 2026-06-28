@@ -3,6 +3,7 @@ import { chapters } from "../../data/iso2026/chapters";
 
 import TopicCard from "../../components/space/TopicCard";
 import { getTopics } from "../../data/iso2026/loaders";
+import { getChapterProgress } from "../../utils/progress";
 
 
 export default function SpaceChapter() {
@@ -11,6 +12,7 @@ export default function SpaceChapter() {
 
   const chapter = chapters.find(c => c.id === Number(id));
   const topics = getTopics(id);
+  const progress = getChapterProgress(chapter.id, chapter.topics);
 
   if (!chapter) {
     return (
@@ -58,7 +60,39 @@ export default function SpaceChapter() {
       }}>
 
         <h1 style={{ color:"#fff" }}>Welcome to this chapter </h1>
+        <div
+style={{
+marginBottom:"25px"
+}}
+>
 
+<div>
+
+Progress : {progress}%
+
+</div>
+
+<div
+style={{
+height:"10px",
+background:"#32496d",
+borderRadius:"20px",
+overflow:"hidden",
+marginTop:"10px"
+}}
+>
+
+<div
+style={{
+width:`${progress}%`,
+height:"100%",
+background:"#38d26f"
+}}
+/>
+
+</div>
+
+</div>
         <p>
           Here you will study every topic one by one,
           solve MCQs and finally attempt the chapter test.

@@ -1,6 +1,9 @@
 import { useParams, Link } from "react-router-dom";
 import { getTopics } from "../../data/iso2026/loaders";
 
+import { useEffect } from "react";
+import { markTopicCompleted } from "../../utils/progress";
+
 
 export default function SpaceTopic() {
 
@@ -10,6 +13,20 @@ export default function SpaceTopic() {
   const topic = topics.find(
       t => t.id === Number(topicId)
   );
+
+  useEffect(()=>{
+
+    if(topic){
+
+        markTopicCompleted(
+            chapterId,
+            topicId
+        );
+
+    }
+
+},[chapterId,topicId]);
+
   if (!topic) {
 
     return (
