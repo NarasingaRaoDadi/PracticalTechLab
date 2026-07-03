@@ -7,11 +7,16 @@ function Portfolio() {
   return (
     <section id="portfolio" className="portfolio">
 
-      <h2>Products Built by LexAutomation</h2>
+      <h2>Products Built by Practical Tech Lab</h2>
 
       <p className="portfolio-intro">
-        Real legal technology solutions developed for law students,
-        citizens and legal professionals.
+        Playwright Framework
+
+        Automation Samples
+
+        React Native Apps
+
+        GitHub Projects
       </p>
 
       <div className="portfolio-grid">
@@ -19,7 +24,8 @@ function Portfolio() {
         {/* LexStudy */}
         <div className="portfolio-card">
 
-          <h3>LexStudy</h3>
+          <h3>Playwright Framework
+</h3>
 
           <span className="badge">
             📱 Live on Google Play
@@ -57,7 +63,8 @@ function Portfolio() {
         {/* LexPetition */}
         <div className="portfolio-card">
 
-          <h3>LexPetition</h3>
+          <h3>Automation Samples
+</h3>
 
           <span className="badge">
             📱 Live on Google Play

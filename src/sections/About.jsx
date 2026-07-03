@@ -2,11 +2,24 @@ export default function About() {
   return (
     <section id="about">
 
-      <h2>About LexAutomation</h2>
+      <h2>About Practical Tech Lab</h2>
 
       <p className="about-intro">
-        LexAutomation bridges Law and Technology through practical software
-        solutions, legal automation tools and educational platforms.
+        11+ Years Software Industry Experience
+
+        Playwright Expert
+
+        Selenium Automation
+
+        API Automation
+
+        React Native Developer
+
+        Real-Time Project Mentor
+
+        Interview Preparation
+
+        Freelance QA Consultant
       </p>
 
       <div className="card-container">

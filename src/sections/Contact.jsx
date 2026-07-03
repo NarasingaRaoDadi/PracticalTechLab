@@ -1,15 +1,14 @@
 export default function Contact() {
 return ( <section id="contact"> <h2>Get In Touch</h2>
   <p>
-    Interested in legal technology, software development,
-    LexStudy, LexPetition, or collaboration opportunities?
+    If you have any questions, project inquiries, or collaboration opportunities, feel free to reach out. I'm always open to discussing new ideas and potential partnerships.
   </p>
   <p>
-    📧 Email: lexautomation.contact@gmail.com
+    📧 Email: devnarasingarao@gmail.com
   </p>
 
   <p>
-    🎥 YouTube: @LexAutomation
+    🎥 YouTube: @practicaltechlab
   </p>
 
   <p>

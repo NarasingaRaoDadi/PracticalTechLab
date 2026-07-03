@@ -5,9 +5,23 @@ export default function Services() {
 
       <div className="card-container">
         <div className="card">
-          <h3>Legal Automation</h3>
+          <h3>Practical Tech Lab</h3>
           <p>
-            Automating legal workflows, document generation and case management.
+            Playwright Automation
+
+            Selenium Automation
+
+            API Automation
+
+            Framework Development
+
+            React Native Apps
+
+            Website Development
+
+            Corporate Training
+
+            Interview Preparation
           </p>
         </div>
 
