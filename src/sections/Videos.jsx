@@ -1,95 +1,89 @@
-import React from "react";
-
 export default function Videos() {
-return ( <section id="videos"> <h2>Featured Videos</h2>
 
-  <div className="card-container">
+  return (
 
-    <div className="card">
-      <h3>Consumer Complaint Guide</h3>
-      <p>E-Jagriti filing process explained step-by-step.</p>
-      <a
-        href="https://www.youtube.com/watch?v=Pdy2g9t-wsw"
-        target="_blank"
-        rel="noreferrer"
-      >
-        Watch Video
-      </a>
-    </div>
+    <section id="youtube" className="youtube">
 
-    <div className="card">
-      <h3>Consumer Success Story</h3>
-      <p>How money was recovered through Consumer Court.</p>
-      <a
-        href="https://www.youtube.com/watch?v=aQqkeqGh7zI"
-        target="_blank"
-        rel="noreferrer"
-      >
-        Watch Video
-      </a>
-    </div>
+      <div className="youtube-left">
 
-    <div className="card">
-      <h3>RTI Filing Tutorial</h3>
-      <p>Learn how to file RTI applications online.</p>
-      <a
-        href="https://www.youtube.com/watch?v=lO4Ogbj0f60"
-        target="_blank"
-        rel="noreferrer"
-      >
-        Watch Video
-      </a>
-    </div>
+        <h2>Learn Free on YouTube</h2>
 
-    <div className="card">
-      <h3>PG Portal Complaint</h3>
-      <p>File government grievances quickly and correctly.</p>
-      <a
-        href="https://www.youtube.com/shorts/iTE8w6isPuI"
-        target="_blank"
-        rel="noreferrer"
-      >
-        Watch Video
-      </a>
-    </div>
+        <p>
 
-    <div className="card">
-      <h3>Block Lost Mobile (CEIR)</h3>
-      <p>Learn how to block a lost mobile in under 60 seconds.</p>
-      <a
-        href="https://www.youtube.com/shorts/dJpszM_3nc4"
-        target="_blank"
-        rel="noreferrer"
-      >
-        Watch Video
-      </a>
-    </div>
+          Start your QA Automation journey with free practical tutorials.
+          Every video is designed to help you build real projects,
+          prepare for interviews and become job-ready.
 
-    <div className="card">
-      <h3>Top 5 LLB Exam Tips</h3>
-      <p>Simple tips to improve answers and score higher.</p>
-      <a
-        href="https://www.youtube.com/shorts/7MrluPHMEb8"
-        target="_blank"
-        rel="noreferrer"
-      >
-        Watch Video
-      </a>
-    </div>
+        </p>
 
-  </div>
+        <ul>
 
-  <div className="youtube-cta">
-    <a
-      href="https://www.youtube.com/@LexAutomation"
-      target="_blank"
-      rel="noreferrer"
-    >
-      View All 150+ Videos on YouTube →
-    </a>
-  </div>
-</section>
+          <li>✔ Playwright Tutorials</li>
 
+          <li>✔ Selenium Automation</li>
 
-);
+          <li>✔ API Testing</li>
+
+          <li>✔ React Native Projects</li>
+
+          <li>✔ Interview Questions</li>
+
+          <li>✔ Real Industry Frameworks</li>
+
+        </ul>
+
+        <div className="youtube-buttons">
+
+          <a
+            href="https://www.youtube.com/@practicaltechlab"
+            target="_blank"
+            rel="noreferrer"
+            className="btn"
+          >
+            Watch Videos
+          </a>
+
+          <a
+            href="https://www.youtube.com/@practicaltechlab?sub_confirmation=1"
+            target="_blank"
+            rel="noreferrer"
+            className="btn-secondary"
+          >
+            Subscribe
+          </a>
+
+        </div>
+
+      </div>
+
+      <div className="youtube-right">
+
+        <div className="youtube-card">
+
+          <h3>Practical Tech Lab</h3>
+
+          <h1>150+</h1>
+
+          <p>Technical Videos</p>
+
+          <hr />
+
+          <p>Playwright</p>
+
+          <p>Selenium</p>
+
+          <p>API Testing</p>
+
+          <p>React Native</p>
+
+          <p>Interview Preparation</p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  );
+
 }

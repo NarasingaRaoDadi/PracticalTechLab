@@ -1,55 +1,54 @@
 export default function About() {
-  return (
-    <section id="about">
 
-      <h2>About Practical Tech Lab</h2>
+const highlights = [
 
-      <p className="about-intro">
-        11+ Years Software Industry Experience
+"11+ Years Software Testing Experience",
 
-        Playwright Expert
+"Playwright Framework Architect",
 
-        Selenium Automation
+"Automation Lead on Enterprise Projects",
 
-        API Automation
+"Banking, Retail, Insurance & SAP Domains",
 
-        React Native Developer
+"React Native App Developer",
 
-        Real-Time Project Mentor
+"150+ Technical Videos",
 
-        Interview Preparation
+"Real Interview Preparation",
 
-        Freelance QA Consultant
-      </p>
+"Hands-on Project Based Learning"
 
-      <div className="card-container">
+];
 
-        <div className="card">
-          <h3>⚖️ Legal Technology</h3>
-          <p>
-            Building innovative legal solutions that simplify legal processes
-            for students, citizens and professionals.
-          </p>
-        </div>
+return (
 
-        <div className="card">
-          <h3>📱 Mobile Applications</h3>
-          <p>
-            Creator of LexStudy and LexPetition, Android applications focused
-            on legal education and document automation.
-          </p>
-        </div>
+<section id="about" className="about">
 
-        <div className="card">
-          <h3>💻 Software Engineering</h3>
-          <p>
-            Backed by 11+ years of software development and test automation
-            experience across multiple industries.
-          </p>
-        </div>
+<h2>Why Learn From Practical Tech Lab?</h2>
 
-      </div>
+<p className="about-intro">
 
-    </section>
-  );
+Learn the exact skills companies expect from QA Automation Engineers.
+Every course is built from real project experience—not copied from documentation.
+
+</p>
+
+<div className="highlight-grid">
+
+{highlights.map((item,index)=>(
+
+<div className="highlight-card" key={index}>
+
+✅ {item}
+
+</div>
+
+))}
+
+</div>
+
+</section>
+
+);
+
 }

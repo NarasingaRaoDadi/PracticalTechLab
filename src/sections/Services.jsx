@@ -1,44 +1,75 @@
 export default function Services() {
-  return (
-    <section id="services">
-      <h2>Services</h2>
 
-      <div className="card-container">
-        <div className="card">
-          <h3>Practical Tech Lab</h3>
-          <p>
-            Playwright Automation
+const services = [
 
-            Selenium Automation
+{
+icon:"🎓",
+title:"Online Training",
+desc:"Industry-focused Playwright, Selenium, API Testing and React Native training with live projects."
+},
 
-            API Automation
+{
+icon:"💼",
+title:"Freelance Automation",
+desc:"Build automation frameworks, UI testing, API testing, framework migration and maintenance."
+},
 
-            Framework Development
+{
+icon:"🏢",
+title:"Corporate Training",
+desc:"Customized QA Automation training for software teams and organizations."
+},
 
-            React Native Apps
+{
+icon:"📄",
+title:"Resume & Interview",
+desc:"Resume review, LinkedIn optimization, mock interviews and job preparation."
+},
 
-            Website Development
+{
+icon:"🚀",
+title:"Mentorship",
+desc:"One-to-one mentorship until you become interview ready."
+},
 
-            Corporate Training
+{
+icon:"📱",
+title:"Mobile App Development",
+desc:"React Native Android application development from idea to Play Store."
+}
 
-            Interview Preparation
-          </p>
-        </div>
+];
 
-        <div className="card">
-          <h3>Software Development</h3>
-          <p>
-            Web and mobile application development for legal professionals.
-          </p>
-        </div>
+return(
 
-        <div className="card">
-          <h3>Consulting</h3>
-          <p>
-            Technology consulting for lawyers, law firms and legal startups.
-          </p>
-        </div>
-      </div>
-    </section>
-  );
+<section id="services" className="services">
+
+<h2>Services</h2>
+
+<p>
+Helping students, professionals and companies build real software automation skills.
+</p>
+
+<div className="service-grid">
+
+{services.map((item,index)=>(
+
+<div className="service-card" key={index}>
+
+<div className="service-icon">{item.icon}</div>
+
+<h3>{item.title}</h3>
+
+<p>{item.desc}</p>
+
+</div>
+
+))}
+
+</div>
+
+</section>
+
+);
+
 }

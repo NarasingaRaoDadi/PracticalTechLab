@@ -1,41 +1,57 @@
 export default function Stats() {
-return ( <section id="stats"> <h2>Our Impact</h2>
 
-  <div className="card-container">
+const roadmap = [
 
-    <div className="card">
-      <h3>📱 2</h3>
-      <p>Android Apps Published</p>
-    </div>
+"📺 Watch Free YouTube Videos",
 
-    <div className="card">
-      <h3>🎥 150+</h3>
-      <p>YouTube Videos Created</p>
-    </div>
+"🎓 Complete Free Playwright Module",
 
-    <div className="card">
-      <h3>📈 26K+</h3>
-      <p>YouTube Views</p>
-    </div>
+"📚 Enroll in Full Course",
 
-    <div className="card">
-      <h3>👨‍💻 11+</h3>
-      <p>Years Software Experience</p>
-    </div>
+"💻 Build Real Automation Projects",
 
-    <div className="card">
-      <h3>🎓</h3>
-      <p>Andhra University LLB Student</p>
-    </div>
+"📝 Resume & LinkedIn Review",
 
-    <div className="card">
-      <h3>⚖️</h3>
-      <p>Legal Technology Builder</p>
-    </div>
+"🎤 Mock Technical Interview",
 
-  </div>
+"🏆 Get Your Dream QA Automation Job"
+
+];
+
+return (
+
+<section id="roadmap" className="roadmap">
+
+<h2>Your Learning Journey</h2>
+
+<p>
+
+A step-by-step roadmap designed to help you become an industry-ready QA Automation Engineer.
+
+</p>
+
+<div className="roadmap-container">
+
+{roadmap.map((step,index)=>(
+
+<div className="roadmap-step" key={index}>
+
+<div className="step-number">
+
+{index+1}
+
+</div>
+
+<h3>{step}</h3>
+
+</div>
+
+))}
+
+</div>
+
 </section>
 
-
 );
+
 }

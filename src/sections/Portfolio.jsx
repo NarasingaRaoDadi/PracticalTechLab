@@ -1,106 +1,77 @@
-import askImg from "../assets/lexstudy-ask.jpg";
-import aibeImg from "../assets/lexstudy-aibe.jpg";
-import lpForm from "../assets/lexpetition-form.jpg";
-import lpPreview from "../assets/lexpetition-preview.jpg";
+export default function Portfolio() {
 
-function Portfolio() {
-  return (
-    <section id="portfolio" className="portfolio">
+const projects=[
 
-      <h2>Products Built by Practical Tech Lab</h2>
+{
+title:"Playwright Automation Framework",
+desc:"Enterprise-grade Playwright framework with TypeScript, POM, Fixtures, Reporting, API Integration and CI/CD.",
+status:"Production Experience"
+},
 
-      <p className="portfolio-intro">
-        Playwright Framework
+{
+title:"Selenium Hybrid Framework",
+desc:"Java + Selenium + TestNG + Maven + Cucumber BDD + Jenkins framework used for enterprise automation.",
+status:"Enterprise Project"
+},
 
-        Automation Samples
+{
+title:"REST API Automation",
+desc:"API automation using Postman, Rest Assured and Playwright API with validations and reusable utilities.",
+status:"Real Project"
+},
 
-        React Native Apps
+{
+title:"React Native Applications",
+desc:"Published Android applications developed using React Native from design to Play Store deployment.",
+status:"Google Play"
+},
 
-        GitHub Projects
-      </p>
+{
+title:"GitHub Projects",
+desc:"Automation frameworks, utilities, learning examples and reusable code for students.",
+status:"Open Source"
+},
 
-      <div className="portfolio-grid">
-
-        {/* LexStudy */}
-        <div className="portfolio-card">
-
-          <h3>Playwright Framework
-</h3>
-
-          <span className="badge">
-            📱 Live on Google Play
-          </span>
-
-          <p>
-            Android learning platform built for Andhra University LLB
-            students. Semester-wise syllabus, question banks,
-            solved papers and AIBE preparation.
-          </p>
-
-          <p className="product-stats">
-            🎓 AU LLB Platform • 📚 1000+ Questions • ⚖️ AIBE Preparation
-          </p>
-
-          <div className="screenshots">
-            <img src={askImg} alt="LexStudy Ask Screen" />
-            <img src={aibeImg} alt="LexStudy AIBE Screen" />
-          </div>
-
-          <button
-            className="btn"
-            onClick={() =>
-              window.open(
-                "https://play.google.com/store/apps/details?id=com.lexstudybase",
-                "_blank"
-              )
-            }
-          >
-            📱 View on Google Play
-          </button>
-
-        </div>
-
-        {/* LexPetition */}
-        <div className="portfolio-card">
-
-          <h3>Automation Samples
-</h3>
-
-          <span className="badge">
-            📱 Live on Google Play
-          </span>
-
-          <p>
-            Legal document automation platform for generating petitions,
-            legal notices and court drafts through guided forms.
-          </p>
-
-          <p className="product-stats">
-            ⚖️ Draft Automation • 📝 Petitions • 📄 Legal Documents
-          </p>
-
-          <div className="screenshots">
-            <img src={lpForm} alt="LexPetition Form" />
-            <img src={lpPreview} alt="Generated Petition" />
-          </div>
-
-          <button
-            className="btn"
-            onClick={() =>
-              window.open(
-                "https://play.google.com/store/apps/details?id=com.lexpetition",
-                "_blank"
-              )
-            }
-          >
-            📱 View on Google Play
-          </button>
-
-        </div>
-
-      </div>
-    </section>
-  );
+{
+title:"Interview Preparation",
+desc:"Real interview questions, coding exercises, framework design and practical assignments.",
+status:"Career Ready"
 }
 
-export default Portfolio;
+];
+
+return(
+
+<section id="portfolio" className="portfolio">
+
+<h2>Projects & Practical Learning</h2>
+
+<p>
+
+Everything taught in Practical Tech Lab comes from real implementation—not copied tutorials.
+
+</p>
+
+<div className="portfolio-grid">
+
+{projects.map((item,index)=>(
+
+<div className="portfolio-card" key={index}>
+
+<h3>{item.title}</h3>
+
+<p>{item.desc}</p>
+
+<span>{item.status}</span>
+
+</div>
+
+))}
+
+</div>
+
+</section>
+
+);
+
+}
