@@ -9,12 +9,14 @@ import Stats from "../sections/Stats";
 import AboutMe from "../sections/AboutMe";
 import Videos from "../sections/Videos";
 import BackToTop from "../components/BackToTop";
+import Courses from "../sections/Courses";
 
 export default function HomePage() {
   return (
     <>
       <Navbar />
       <Hero />
+      <Courses />
       <About />
       <Services />
       <Portfolio />

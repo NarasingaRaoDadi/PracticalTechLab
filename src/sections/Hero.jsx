@@ -8,20 +8,16 @@ export default function Hero() {
         <div className="hero-text">
           <h1>Practical Tech Lab</h1>
 
-          <h2>Master QA Automation | 
-              Like Industry Professionals</h2>
+          <h2>Master QA Automation
+Build Real Projects.
+Crack Interviews.</h2>
 
           <p>
-            Learn Playwright, Selenium,
-            TypeScript, JavaScript,
-            API Testing and React Native
-            through practical projects,
-            real interview questions
-            and industry-focused training.
+            Learn Playwright, Selenium, API Testing, JavaScript, TypeScript and React Native through real-world projects, interview-focused examples and enterprise automation practices used in the software industry.
           </p>
 
           <div className="hero-buttons">
-          <a href="#portfolio" className="btn">
+          <a href="#courses" className="btn">
             Start Learning
           </a>
 
