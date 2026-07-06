@@ -1,3 +1,4 @@
+import { day1 } from "../data/coursedata";
 export default function Day1() {
 
   const topics = [
@@ -36,20 +37,9 @@ export default function Day1() {
 
         {/* Replace later with your own video */}
 
-        <video
-          controls
-          width="100%"
-          poster="/playwright-day1.jpg"
-        >
-
-          <source
-            src="/videos/playwright-day1.mp4"
-            type="video/mp4"
-          />
-
-          Your browser does not support video.
-
-        </video>
+        <video controls width="100%">
+        <source src={day1.video} type="video/mp4" />
+      </video>
 
       </div>
 
@@ -58,18 +48,10 @@ export default function Day1() {
 
       <div className="download-section">
 
-        <a
-        href="/sourcecode/Playwright-Day1.zip"
-        download
-        >
-
-        <button>
-
+      <a href={day1.zip} download>
         📥 Download Source Code
+      </a>
 
-        </button>
-
-        </a>
 
       </div>
 
