@@ -1,4 +1,4 @@
-import { day1 } from "../data/coursedata";
+import { day1 } from "../data/courseData";
 export default function Day1() {
 
   const topics = [
@@ -24,9 +24,9 @@ export default function Day1() {
 
         <h1>🎭 Playwright Masterclass</h1>
 
-        <h2>Day 1 - Installation & Environment Setup</h2>
+        <h2>{day1.title}</h2>
 
-        <p>Duration : 18 Minutes</p>
+        <p>Duration : {day1.duration}</p>
 
       </div>
 
@@ -37,9 +37,13 @@ export default function Day1() {
 
         {/* Replace later with your own video */}
 
-        <video controls width="100%">
-        <source src={day1.video} type="video/mp4" />
-      </video>
+        <video
+    src={day1.video}
+    controls
+    playsInline
+    preload="metadata"
+    style={{ width: "100%" }}
+/>
 
       </div>
 
