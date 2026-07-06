@@ -62,9 +62,9 @@ export default function Videos() {
 
           <h3>Practical Tech Lab</h3>
 
-          <h1>150+</h1>
+          <h1>52+</h1>
 
-          <p>Technical Videos</p>
+          <p>Videos Published</p>
 
           <hr />
 

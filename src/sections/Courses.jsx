@@ -1,91 +1,116 @@
+import { Link } from "react-router-dom";
+
 export default function Courses() {
 
-const courses = [
+  const courses = [
 
-{
-icon:"🎭",
-title:"Playwright + TypeScript",
-level:"Beginner → Advanced",
-project:"8 Real Projects",
-status:"FREE MODULE AVAILABLE"
-},
+    {
+      icon: "🎭",
+      title: "Playwright + TypeScript",
+      level: "Beginner → Advanced",
+      project: "8 Real Projects",
+      status: "FREE MODULE AVAILABLE",
+      active: true,
+      link: "/courses/playwright-typescript"
+    },
 
-{
-icon:"⚡",
-title:"Playwright + JavaScript",
-level:"Beginner → Advanced",
-project:"5 Real Projects",
-status:"COMING SOON"
-},
+    {
+      icon: "⚡",
+      title: "Playwright + JavaScript",
+      level: "Beginner → Advanced",
+      project: "5 Real Projects",
+      status: "COMING SOON",
+      active: false
+    },
 
-{
-icon:"🧪",
-title:"Selenium + Java",
-level:"Core Automation",
-project:"Framework Design",
-status:"COMING SOON"
-},
+    {
+      icon: "🧪",
+      title: "Selenium + Java",
+      level: "Core Automation",
+      project: "Framework Design",
+      status: "COMING SOON",
+      active: false
+    },
 
-{
-icon:"🌐",
-title:"REST API Testing",
-level:"Postman + REST Assured",
-project:"API Projects",
-status:"COMING SOON"
-},
+    {
+      icon: "🌐",
+      title: "REST API Testing",
+      level: "Postman + REST Assured",
+      project: "API Projects",
+      status: "COMING SOON",
+      active: false
+    },
 
-{
-icon:"📱",
-title:"React Native",
-level:"Android Development",
-project:"Build Live Apps",
-status:"COMING SOON"
-},
+    {
+      icon: "📱",
+      title: "React Native",
+      level: "Android Development",
+      project: "Build Live Apps",
+      status: "COMING SOON",
+      active: false
+    },
 
-{
-icon:"🚀",
-title:"Interview Preparation",
-level:"QA Automation",
-project:"100+ Questions",
-status:"COMING SOON"
-}
+    {
+      icon: "🚀",
+      title: "Interview Preparation",
+      level: "QA Automation",
+      project: "100+ Questions",
+      status: "COMING SOON",
+      active: false
+    }
 
-];
+  ];
 
-return(
+  return (
 
-<section id="courses" className="courses">
+    <section id="courses" className="courses">
 
-<h2>Courses</h2>
+      <h2>Courses</h2>
 
-<p>
-Learn by building real projects, not by watching endless theory videos.
-</p>
+      <p>
+        Learn by building real projects, not by watching endless theory videos.
+      </p>
 
-<div className="course-grid">
+      <div className="course-grid">
 
-{courses.map((course,index)=>(
+        {courses.map((course, index) => (
 
-<div className="course-card" key={index}>
+          <div className="course-card" key={index}>
 
-<h1>{course.icon}</h1>
+            <h1>{course.icon}</h1>
 
-<h3>{course.title}</h3>
+            <h3>{course.title}</h3>
 
-<p>{course.level}</p>
+            <p>{course.level}</p>
 
-<p>{course.project}</p>
+            <p>{course.project}</p>
 
-<button>{course.status}</button>
+            {course.active ? (
 
-</div>
+              <Link to={course.link}>
 
-))}
+                <button>
+                  {course.status}
+                </button>
 
-</div>
+              </Link>
 
-</section>
+            ) : (
 
-);
+              <button disabled>
+                {course.status}
+              </button>
+
+            )}
+
+          </div>
+
+        ))}
+
+      </div>
+
+    </section>
+
+  );
 
 }

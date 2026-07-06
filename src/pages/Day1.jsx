@@ -1,0 +1,122 @@
+export default function Day1() {
+
+  const topics = [
+    "What is Playwright?",
+    "Why Playwright instead of Selenium?",
+    "Install Node.js",
+    "Verify Node & npm versions",
+    "Create project folder",
+    "Install VS Code",
+    "Install Playwright",
+    "Install browsers",
+    "Project Structure",
+    "Run first sample test",
+    "Common Installation Issues",
+    "Day 2 Preview"
+  ];
+
+  return (
+
+    <section className="lesson-page">
+
+      <div className="lesson-header">
+
+        <h1>🎭 Playwright Masterclass</h1>
+
+        <h2>Day 1 - Installation & Environment Setup</h2>
+
+        <p>Duration : 18 Minutes</p>
+
+      </div>
+
+
+      {/* VIDEO */}
+
+      <div className="video-section">
+
+        {/* Replace later with your own video */}
+
+        <video
+          controls
+          width="100%"
+          poster="/playwright-day1.jpg"
+        >
+
+          <source
+            src="/videos/playwright-day1.mp4"
+            type="video/mp4"
+          />
+
+          Your browser does not support video.
+
+        </video>
+
+      </div>
+
+
+      {/* DOWNLOAD */}
+
+      <div className="download-section">
+
+        <a
+        href="/sourcecode/Playwright-Day1.zip"
+        download
+        >
+
+        <button>
+
+        📥 Download Source Code
+
+        </button>
+
+        </a>
+
+      </div>
+
+
+      {/* TOPICS */}
+
+      <div className="topics">
+
+        <h2>Topics Covered</h2>
+
+        <ul>
+
+          {topics.map((topic,index)=>(
+
+            <li key={index}>
+
+              ✅ {topic}
+
+            </li>
+
+          ))}
+
+        </ul>
+
+      </div>
+
+
+      {/* NAVIGATION */}
+
+      <div className="lesson-navigation">
+
+        <button disabled>
+
+          ⬅ Previous Lesson
+
+        </button>
+
+        <button disabled>
+
+          🔒 Next Lesson
+
+        </button>
+
+      </div>
+
+    </section>
+
+  );
+
+}

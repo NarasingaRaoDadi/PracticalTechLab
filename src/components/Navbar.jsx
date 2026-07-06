@@ -22,6 +22,7 @@ export default function Navbar() {
         <li><a href="#about" onClick={closeMenu}>About</a></li>
         <li><a href="#services" onClick={closeMenu}>Services</a></li>
         <li><a href="#portfolio" onClick={closeMenu}>Projects</a></li>
+        <li><a href="#aboutme" onClick={closeMenu}>AboutMe</a></li>
         <li><a href="#youtube" onClick={closeMenu}>YouTube</a></li>
         <li><a href="#contact" onClick={closeMenu}>Contact</a></li>
       </ul>

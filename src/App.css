@@ -188,19 +188,50 @@ section {
 
 
 
-.profile-photo {
-  width: 120px;
-  height: 120px;
+.profile-photo{
+
+width:170px;
+
+height:170px;
+
+border-radius:50%;
+
+border:4px solid #2563eb;
+
+object-fit:cover;
+
+margin:25px auto;
+
+display:block;
+
 }
 .about-me {
   text-align: center;
   padding: 80px 20px;
 }
 
-.about-name {
-  font-size: 2rem;
-  margin-bottom: 25px;
-  color: #1e293b;
+.about-name{
+
+font-size:3rem;
+
+color:white;
+
+margin:25px 0 10px;
+
+font-weight:700;
+
+}
+
+.about-role{
+
+color:#60a5fa;
+
+font-size:1.7rem;
+
+margin-bottom:35px;
+
+font-weight:600;
+
 }
 
 .profile-tags {
@@ -211,20 +242,34 @@ section {
   margin-bottom: 35px;
 }
 
-.profile-tags span {
-  background: #eef4ff;
-  color: #1d4ed8;
-  padding: 10px 18px;
-  border-radius: 25px;
-  font-weight: 600;
+.profile-tags span{
+
+background:#1e293b;
+
+color:white;
+
+padding:12px 18px;
+
+border-radius:30px;
+
+border:1px solid #334155;
+
+font-weight:600;
+
 }
 
-.about-description {
-  max-width: 1000px;
-  margin: 0 auto;
-  line-height: 1.8;
-  font-size: 1.2rem;
-  color: #475569;
+.about-description{
+
+max-width:900px;
+
+margin:45px auto 0;
+
+color:#cbd5e1;
+
+font-size:20px;
+
+line-height:1.9;
+
 }
 
 .youtube-cta {
@@ -576,6 +621,7 @@ background:#111827;
 text-align:center;
 
 }
+
 
 .about h2{
 
@@ -1147,5 +1193,115 @@ justify-content:center;
 gap:20px;
 
 flex-wrap:wrap;
+
+}
+
+.playwright-course{
+
+max-width:1000px;
+
+margin:auto;
+
+padding:80px 20px;
+
+}
+
+.course-header{
+
+text-align:center;
+
+margin-bottom:60px;
+
+}
+
+.lesson-card{
+
+background:#1b2645;
+
+padding:20px;
+
+margin-bottom:15px;
+
+border-radius:12px;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+}
+
+.lesson-card h3{
+
+color:white;
+
+margin:0;
+
+font-size:24px;
+
+font-weight:600;
+
+}
+
+.lesson-card a{
+
+background:#2563eb;
+
+padding:10px 20px;
+
+border-radius:8px;
+
+color:white;
+
+text-decoration:none;
+
+}
+
+.lesson-card button{
+
+padding:10px 20px;
+
+border:none;
+
+border-radius:8px;
+
+background:#444;
+
+color:white;
+
+}
+
+.unlock-card{
+
+margin-top:60px;
+
+background:#132238;
+
+padding:40px;
+
+border-radius:20px;
+
+text-align:center;
+
+color:white;
+
+}
+
+.unlock-card button{
+
+margin-top:20px;
+
+padding:15px 40px;
+
+background:#2563eb;
+
+color:white;
+
+border:none;
+
+border-radius:10px;
+
+cursor:pointer;
 
 }

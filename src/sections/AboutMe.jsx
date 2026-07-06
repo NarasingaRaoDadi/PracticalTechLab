@@ -2,8 +2,9 @@ import aboutMeImg from "../assets/about-me.png";
 
 export default function AboutMe() {
   return (
-    <section id="about-me" className="about-me">
-      <h2>About Me</h2>
+    <section id="aboutme" className="about">
+
+      <h2>Meet Your Instructor</h2>
 
       <img
         src={aboutMeImg}
@@ -13,25 +14,32 @@ export default function AboutMe() {
 
       <h3 className="about-name">
         Narasinga Rao Dadi
-        
       </h3>
-      <h2>Legal Technology Builder | Software Engineer | Law Student</h2>
+
+      <h4 className="about-role">
+        Senior QA Automation Engineer
+      </h4>
+
       <div className="profile-tags">
-        <span>11+ Years Software Experience</span>
-        <span>Andhra University LLB Student</span>
-        <span>Creator of LexStudy</span>
-        <span>Creator of LexPetition</span>
-        <span>LexAutomation Founder</span>
-        <span>Legal Technology Enthusiast</span>
+        <span>11+ Years Experience</span>
+        <span>Enterprise QA Expert</span>
+        <span>✓ Playwright</span>
+        <span>✓ Selenium</span>
+        <span>✓ API Testing</span>
+        <span>✓ Framework Design</span>
+        <span>✓ Mobile Automation</span>
+        <span>✓ Interview Support</span>
+        <span>✓ Web & Mobile App Development</span>
       </div>
 
       <p className="about-description">
-        With over 11 years of software engineering experience, 
-        I am currently pursuing an LLB from Andhra University 
-        while building legal technology products. Through LexStudy and LexPetition, 
-        my goal is to bridge the gap between law and technology by creating practical 
-        solutions for students, advocates and legal professionals.
+        With over 11 years of experience in QA Automation, I have built enterprise
+        automation frameworks, tested banking and retail applications, and mentored
+        QA engineers. Practical Tech Lab is designed to help students master
+        Playwright, Selenium, API Testing and modern automation practices through
+        practical, real-world projects instead of theory alone.
       </p>
+
     </section>
   );
 }
