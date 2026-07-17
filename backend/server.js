@@ -6,13 +6,12 @@ import crypto from "crypto";
 
 import { initializeApp, cert } from "firebase-admin/app";
 import { getFirestore, FieldValue } from "firebase-admin/firestore";
-import { createRequire } from "module";
 
 dotenv.config();
 
-const require = createRequire(import.meta.url);
-
-const serviceAccount = require("./serviceAccountKey.json");
+const serviceAccount = JSON.parse(
+  process.env.FIREBASE_SERVICE_ACCOUNT
+);
 
 initializeApp({
   credential: cert(serviceAccount)
