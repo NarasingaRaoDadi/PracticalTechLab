@@ -1,0 +1,106 @@
+.login-container{    
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#071330;
+}
+
+.login-form{
+    width:400px;
+    background:white;
+    padding:35px;
+    border-radius:8px;
+    display:flex;
+    flex-direction:column;
+    gap:14px;
+}
+
+.login-form h1{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.login-form input{
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    font-size:16px;
+}
+
+.login-form button{
+    padding:12px;
+    background:#007bff;
+    color:white;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.login-form button:hover{
+    background:#0056b3;
+}
+
+.login-actions{
+
+display:flex;
+
+justify-content:flex-end;
+
+gap:12px;
+
+margin-bottom:10px;
+
+}
+
+.icon-btn{
+    width:42px;
+    height:42px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border:none;
+    border-radius:8px;
+
+    background:#2563eb;
+    color:white;
+
+    cursor:pointer;
+
+    transition:.2s;
+}
+
+.icon-btn:hover{
+    background:#1d4ed8;
+}
+
+.forgot-password{
+
+background:none;
+
+border:none;
+
+color:#2962ff;
+
+font-size:15px;
+
+font-weight:600;
+
+cursor:pointer;
+
+padding:0;
+
+margin:18px auto;
+
+display:block;
+
+}
+
+.forgot-password:hover{
+
+text-decoration:underline;
+
+}

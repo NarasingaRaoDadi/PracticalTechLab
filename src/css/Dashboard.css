@@ -1,0 +1,35 @@
+.dashboard{
+
+max-width:900px;
+
+margin:auto;
+
+padding:50px;
+
+}
+
+.dashboard h1{
+
+font-size:42px;
+
+}
+
+.dashboard button{
+
+margin-top:30px;
+
+padding:15px 35px;
+
+font-size:18px;
+
+background:#2563eb;
+
+color:white;
+
+border:none;
+
+border-radius:8px;
+
+cursor:pointer;
+
+}

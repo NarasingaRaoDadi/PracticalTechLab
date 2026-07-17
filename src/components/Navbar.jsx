@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -25,6 +26,7 @@ export default function Navbar() {
         <li><a href="#aboutme" onClick={closeMenu}>AboutMe</a></li>
         <li><a href="#youtube" onClick={closeMenu}>YouTube</a></li>
         <li><a href="#contact" onClick={closeMenu}>Contact</a></li>
+
       </ul>
     </nav>
   );

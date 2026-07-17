@@ -1,26 +1,38 @@
 import { Link } from "react-router-dom";
 
+import { useEffect, useState } from "react";
+import { auth, db } from "../firebase/firebaseConfig";
+import { onAuthStateChanged } from "firebase/auth";
+import { doc, getDoc } from "firebase/firestore";
+import { COURSES } from "../data/courses";
+
 export default function PlaywrightCourse() {
+const [purchasedModules, setPurchasedModules] = useState([]);
+useEffect(() => {
 
-const lessons = [
+  const unsubscribe = onAuthStateChanged(auth, async (user) => {
 
-{title:"Day 1 - Installation", free:true},
+    if (!user) return;
 
-{title:"Day 2 - VS Code Setup", free:false},
+    const snap = await getDoc(doc(db, "ptl_users", user.uid));
 
-{title:"Day 3 - First Test", free:false},
+    if (snap.exists()) {
 
-{title:"Day 4 - Locators", free:false},
+      setPurchasedModules(
+        snap.data().purchasedModules || []
+      );
 
-{title:"Day 5 - Assertions", free:false},
+    }
 
-{title:"Day 6 - Browser Context", free:false},
+  });
 
-{title:"Day 7 - Page Object Model", free:false},
+  return () => unsubscribe();
 
-{title:"Day 8 - Framework Design", free:false}
+}, []);
 
-];
+const course = COURSES["playwright-typescript"];
+
+const modules = course.modules;
 
 return(
 
@@ -28,85 +40,100 @@ return(
 
 <div className="course-header">
 
-<h1>🎭 Playwright with TypeScript</h1>
+<h1>{course.title}</h1>
 
-<h3>Beginner → Advanced</h3>
+<h3>{course.level}</h3>
 
-<h2>Beginner Friendly</h2>
+<h2>{course.subtitle}</h2>
 
-<p>📚 30 Lessons</p>
+<p>📚 {course.totalLessons} Lessons</p>
 
-<p>💻 8 Real Projects</p>
-
-<p>🎓 Beginner → Advanced</p>
+<p>💻 {course.totalProjects} Real Projects</p>
 
 </div>
 
 <div className="lesson-list">
 
-<h2>Module 1 (FREE)</h2>
+<h2>Preview (FREE)</h2>
 
 {
 
-lessons.map((lesson,index)=>(
+modules.map((module,index)=>{
+const purchased =
+    purchasedModules.includes(module.id);
+  
+  return (
+<div className="module-card" key={index}>
 
-<div className="lesson-card" key={index}>
+<h2>{module.title}</h2>
 
-<h3>{lesson.title}</h3>
+<p>{module.subtitle}</p>
+
+<h3>{module.free
+    ? "FREE"
+    : `₹${module.price}`}</h3>
 
 {
+module.topics &&
 
-lesson.free ?
+<ul>
 
-<Link to="/courses/playwright-typescript/day1">
+{
+module.topics.map((topic,i)=>(
 
-<button>
+<li key={i}>✅ {topic}</li>
 
-▶ Watch Now
+))
+}
 
-</button>
+</ul>
 
+}
+
+{
+module.free ?
+
+<Link to={module.route}>
+   <button>{module.button}</button>
 </Link>
 
 :
 
-<button disabled>
+module.disabled ? (
 
-🔒 Locked
+  <button disabled>
+    {module.button}
+  </button>
 
-</button>
+) : purchased ? (
+
+  <Link to={module.continueRoute}>
+    <button>▶ Continue Learning</button>
+  </Link>
+
+) : (
+
+  <Link
+    to={module.route}
+    state={{
+      course: module.course,
+      moduleName: module.moduleName,
+      moduleId: module.id,
+      price: module.price
+    }}
+  >
+    <button>{module.button}</button>
+  </Link>
+
+)
 
 }
 
 </div>
+  );
 
-))
-
+})
 }
-
-</div>
-
-<div className="unlock-card">
-
-<h2 style={{ color: 'white' }}> Unlock Full Playwright Masterclass</h2>
-
-<h1 style={{ color: 'white' }}>₹499</h1>
-
-<p>✔ 30 Lessons</p>
-
-<p>✔ 8 Real Projects</p>
-
-<p>✔ Source Code</p>
-
-<p>✓ Interview Questions</p>
-
-<p>✔ Certificate</p>
-
-<button>
-
-Unlock Now
-
-</button>
 
 </div>
 

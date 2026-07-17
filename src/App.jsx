@@ -3,7 +3,14 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import HomePage from "./pages/HomePage";
 import PlaywrightCourse from "./pages/PlaywrightCourse";
-import Day1 from "./pages/Day1";
+
+import Login from "./pages/Login";
+import Signup from "./pages/Signup";
+import Dashboard from "./pages/Dashboard";
+import Payment from "./pages/Payment";
+
+import Lesson from "./pages/Lesson";
+import Module from "./pages/Module";
 
 function App() {
   return (
@@ -19,9 +26,23 @@ function App() {
         />
 
         <Route
-          path="/courses/playwright-typescript/day1"
-          element={<Day1 />}
+          path="/courses/:courseId/:moduleId"
+          element={<Module />}
         />
+      
+        
+       <Route
+          path="/lesson/:courseId/:lessonId"
+          element={<Lesson />}
+        />
+
+        <Route path="/login" element={<Login />} />
+
+        <Route path="/signup" element={<Signup />} />
+
+        <Route path="/dashboard" element={<Dashboard />} />
+
+        <Route path="/payment" element={<Payment />} />
         
       </Routes>
 

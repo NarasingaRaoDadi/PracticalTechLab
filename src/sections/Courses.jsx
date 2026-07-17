@@ -6,26 +6,17 @@ export default function Courses() {
 
     {
       icon: "🎭",
-      title: "Playwright + TypeScript",
+      title: "Playwright + AI",
       level: "Beginner → Advanced",
-      project: "8 Real Projects",
+      project: "4 Real Projects",
       status: "FREE MODULE AVAILABLE",
       active: true,
       link: "/courses/playwright-typescript"
     },
 
     {
-      icon: "⚡",
-      title: "Playwright + JavaScript",
-      level: "Beginner → Advanced",
-      project: "5 Real Projects",
-      status: "COMING SOON",
-      active: false
-    },
-
-    {
       icon: "🧪",
-      title: "Selenium + Java",
+      title: "Selenium + Python",
       level: "Core Automation",
       project: "Framework Design",
       status: "COMING SOON",
@@ -49,15 +40,6 @@ export default function Courses() {
       status: "COMING SOON",
       active: false
     },
-
-    {
-      icon: "🚀",
-      title: "Interview Preparation",
-      level: "QA Automation",
-      project: "100+ Questions",
-      status: "COMING SOON",
-      active: false
-    }
 
   ];
 

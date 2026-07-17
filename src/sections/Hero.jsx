@@ -1,4 +1,5 @@
 import heroImage from "../assets/hero.png";
+import { Link } from "react-router-dom";
 
 export default function Hero() {
   return (
@@ -21,14 +22,10 @@ Crack Interviews.</h2>
             Start Learning
           </a>
 
-  <a
-    href="https://www.youtube.com/@practicaltechlab"
-    target="_blank"
-    rel="noreferrer"
-    className="btn-secondary"
-  >
-    Watch YouTube
-  </a>
+  <Link to="/login" className="btn-secondary">
+    Student Login
+  </Link>
+    
 </div>
         </div>
 
