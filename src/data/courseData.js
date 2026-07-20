@@ -49,7 +49,7 @@ export const day2 = {
 
   title: "Day 2 - First Test",
 
-  duration: "Coming Soon",
+  duration: "16 min",
 
   video: "https://res.cloudinary.com/bygdo4ag/video/upload/v1784254657/Playwright-Day2_ewjq6m.mp4",
 
@@ -88,9 +88,9 @@ export const day3 = {
 
   title: "Day 3 - Locators",
 
-  duration: "Coming Soon",
+  duration: "24 min",
 
-  video: "",
+  video: "https://res.cloudinary.com/bygdo4ag/video/upload/v1784448611/Day3_Pw_Locators_Ptl_ll4wvn.mp4",
 
   zip: "/sourcecode/Playwright-Day3.zip",
 
@@ -101,17 +101,16 @@ export const day3 = {
   next: "/lesson/playwright-typescript/day4",
 
   topics: [
-    "What is a Locator?",
+    "Create a New Test File",
+    "Explain - What is a Locator?",
     "Inspect Element",
+    "getByPlaceholder()",
     "getByRole()",
     "getByText()",
-    "getByPlaceholder()",
-    "getByLabel()",
     "locator()",
-    "xpath()",
+    "css selector() and xpath()",
     "Best Practices",
     "Common Mistakes",
-    "Homework",
     "Day 4 Preview"
   ]
 
@@ -129,9 +128,9 @@ export const day4 = {
 
   title: "Day 4 - Assertions",
 
-  duration: "Coming Soon",
+  duration: "14 min",
 
-  video: "",
+  video: "https://res.cloudinary.com/bygdo4ag/video/upload/v1784554547/Playwright-Day4_d5xyiv.mp4",
 
   zip: "/sourcecode/Playwright-Day4.zip",
 
@@ -145,15 +144,14 @@ export const day4 = {
     "What is an Assertion?",
     "toHaveTitle()",
     "toHaveURL()",
-    "tobeVisible()",
+    "toBeVisible()",
     "toHaveText()",
-    "tocontainText()",
-    "tobeenabled()",
-    "tobedisabled()",
-    "Auto-waiting",
+    "toContainText()",
+    "toBeEnabled()",
+    "toBeDisabled()",
     "Html Report",
     "Best Practices",
-    "common Mistakes",
+    "Common Mistakes",
     "Homework",
     "Day 5 Preview"
   ]
